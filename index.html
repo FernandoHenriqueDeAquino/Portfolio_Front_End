@@ -30,8 +30,10 @@
         <article>
 
             <p>
-                Olá, eu sou o Fernando, um dev front end iniciante de Joinville, SC e vocalista da banda Queen of Skulls <br>
-                Casado com a Ana Luiza, membro da igreja Onda Dura, escritor, desenhista, tatuador, editor de vídeo e TDAH
+                Olá, eu sou o Fernando, um dev front end iniciante de Joinville, SC e vocalista da banda Queen of Skulls
+                <br>
+                Casado com a Ana Luiza, membro da igreja Onda Dura, escritor, desenhista, tatuador, editor de vídeo e
+                TDAH
             </p>
 
         </article>
@@ -64,11 +66,37 @@
         <p>Todos os direitos reservados a Fernando Henrique de Aquino </p>
         <section id="contato">
             <h2>Contato</h2>
-            <p>Tem um projeto em mente? Entre em contato</p>
-            <address>
-                Email: <a href="mailto:fernandohenriquedeaquino@gmail.com">fernandohenriquedeaquino@gmail.com</a> <br>
-                Whatsapp: <a href="tel:+5547991310896">(47)99131-0896</a>
-            </address>
+            <form action="">
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" required> <br>
+                
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required> <br>
+                
+                <label for="telefone">Telefone: </label>
+                <input type="tel" id="telefone" name="telefone"> <br>
+                
+                <label for="assunto">Assunto: </label>
+                <select name="assunto" id="assunto">
+                    <option value="orcamento">Orçamento</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <br>
+
+                <label for="mensagem">Mensagem: </label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+                
+                <br>
+
+                <input type="checkbox" name="inscricao" id="inscricao">
+                <label for="inscricao">Deseja receber minha newsletter? Fique por dentro! </label>
+
+                <br>
+
+                <input type="submit" value="Enviar mensagem">
+            </form>
         </section>
     </footer>
 </body>
