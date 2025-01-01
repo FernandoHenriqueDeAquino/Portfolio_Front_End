@@ -5,69 +5,230 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fernando Henrique de Aquino</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e; /* Dark grey background */
+            color: white;
+            display: flex;
+            flex-direction: column; /* Stack header and content */
+            align-items: center;
+            min-height: 100vh; /* Allow full height of the viewport */
+            justify-content: flex-start; /* Align the content to the top */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        /* Title/Header styling */
+        header {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #ff7f32; /* Bright orange for the title */
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 5px;
+        }
+
+        nav ul li a:hover {
+            color: #ff7f32; /* Highlight link on hover */
+        }
+
+        /* Section styling */
+        section {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            margin: 20px;
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #ff7f32;
+            margin-bottom: 15px;
+        }
+
+        article, aside {
+            margin-bottom: 20px;
+        }
+
+        img {
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            font-size: 1rem;
+        }
+
+        /* Form styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            color: white;
+            font-size: 1rem;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            background-color: #222; /* Dark background for inputs */
+            border: 1px solid #444;
+            border-radius: 5px;
+            color: white;
+            font-size: 1rem;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 150px;
+        }
+
+        input[type="submit"] {
+            background-color: #ff7f32;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #e66b2b; /* Slightly darker orange when hovered */
+        }
+
+        /* Footer styling */
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            width: 100%;
+        }
+
+        /* Responsive design: mobile view */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            section {
+                padding: 15px;
+                margin: 10px;
+            }
+
+            h1 {
+                font-size: 1.8rem; /* Smaller header on mobile */
+            }
+
+            h2 {
+                font-size: 1.6rem; /* Smaller section headers */
+            }
+
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            nav ul li a {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <h1>Fernando Henrique de Aquino</h1>
-        <nav> <!--Seção de navegação do site-->
+        <nav>
             <ul>
                 <li><a href="#sobre">Sobre mim</a></li>
                 <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#contato">Contato</a></li>
                 <li><a href="https://open.spotify.com/playlist/3SHUh0hGpKCicPxIdTsLq2?si=PcdPaec6SZGMuY12bWMWVg&pi=Nl63W9v4QA2TB"
                         target="_blank">Playlist</a></li>
-            </ul> <!--Lista não ordenada pra links do menu-->
+            </ul>
         </nav>
     </header>
 
     <section id="sobre">
         <h2>Sobre mim</h2>
-
         <img src="https://scontent-gru2-1.xx.fbcdn.net/v/t39.30808-6/296345765_5534522393330003_8421277222514670395_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeGKpI1d4ZTCIvf1nhS56XQL9TncV27Er0v1OdxXbsSvSxEfBSi09E20YrMlgQSljIkrZkO91NAo7kv1jhWz30we&_nc_ohc=NvNTPjRSfLIQ7kNvgELTSPJ&_nc_zt=23&_nc_ht=scontent-gru2-1.xx&_nc_gid=AkdadUKMFk65t9ajpUFmamb&oh=00_AYCY7DJ478w89__TASYixQiQigiGfd1WZ3jJ-pPo9BDj8A&oe=6777AA7B"
-            alt="Imagem de foto de perfil" title="imagem de perfil" style="width: 64px; height: 64px ;">
+            alt="Imagem de foto de perfil" title="imagem de perfil" style="width: 100px; height: 100px;">
 
         <article>
-
             <p>
                 Olá, eu sou o Fernando, um dev front end iniciante de Joinville, SC e vocalista da banda Queen of Skulls
                 <br>
                 Casado com a Ana Luiza, membro da igreja Onda Dura, escritor, desenhista, tatuador, editor de vídeo e
                 TDAH
             </p>
-
         </article>
 
         <aside>
-            <h3>
-                Habilidades
-            </h3>
-
+            <h3>Habilidades</h3>
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Javascript</li>
             </ul>
         </aside>
-
     </section>
 
     <section id="projetos">
-
         <h2>Projetos</h2>
         <article>
             <h3>Portfólio</h3>
             <p>Este foi o primeiro site que desenvolvi quando comecei a estudar front end </p>
         </article>
-
     </section>
 
     <section id="habilidades">
-
         <h2>Habilidades e tecnologias</h2>
-
         <table>
-            
             <thead>
                 <tr>
                     <th>Tecnologia</th>
@@ -75,7 +236,6 @@
                     <th>Descrição</th>
                 </tr>
             </thead>
-
             <tbody>
                 <tr>
                     <td>HTML</td>
@@ -94,46 +254,11 @@
                 </tr>
             </tbody>
         </table>
-
     </section>
 
     <footer>
-        <p>Todos os direitos reservados a Fernando Henrique de Aquino </p>
-        <section id="contato">
-            <h2>Contato</h2>
-            <form action="">
-                <label for="nome">Nome: </label>
-                <input type="text" id="nome" name="nome" required> <br>
-                
-                <label for="email">Email: </label>
-                <input type="email" id="email" name="email" required> <br>
-                
-                <label for="telefone">Telefone: </label>
-                <input type="tel" id="telefone" name="telefone"> <br>
-                
-                <label for="assunto">Assunto: </label>
-                <select name="assunto" id="assunto">
-                    <option value="orcamento">Orçamento</option>
-                    <option value="duvida">Dúvida</option>
-                    <option value="outro">Outro</option>
-                </select>
-
-                <br>
-
-                <label for="mensagem">Mensagem: </label>
-                <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
-                
-                <br>
-
-                <input type="checkbox" name="inscricao" id="inscricao">
-                <label for="inscricao">Deseja receber minha newsletter? Fique por dentro! </label>
-
-                <br>
-
-                <input type="submit" value="Enviar mensagem">
-            </form>
-        </section>
+        <p>Todos os direitos reservados a Fernando Henrique de Aquino</p>
     </footer>
-</body>
 
-</html>
+    <section id="contato">
+        <h2>Contato
