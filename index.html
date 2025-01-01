@@ -182,6 +182,9 @@ footer {
     }
 }
     </style>
+
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
 </head>
 
 <body>
@@ -261,11 +264,7 @@ footer {
         </table>
     </section>
 
-    <footer>
-        <p>Todos os direitos reservados a Fernando Henrique de Aquino</p>
-    </footer>
-
-    <section id="contato">
+        <section id="contato">
         <h2>Contato</h2>
 
         <form action="" id="form" name="form">
@@ -280,6 +279,33 @@ footer {
 
             <button type="submit">Enviar</button>
         </form>
-    </section>    
+    </section>
+    
+    <footer>
+        <p>Todos os direitos reservados a Fernando Henrique de Aquino</p>
+    </footer>
+
+    <script>
+        // Initialize EmailJS with your User ID
+        emailjs.init("whcPuGo4AJ3g6GPzv");
+
+        // Handle form submission
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the form from reloading the page
+
+            // Get form data
+            const formData = new FormData(this);
+
+            // Send the email using EmailJS
+            emailjs.sendForm("service_pw5hlcc", "service_pw5hlcc", this)
+                .then(function(response) {
+                    console.log("Email sent successfully", response);
+                    alert("Mensagem enviada com sucesso!");
+                }, function(error) {
+                    console.error("Failed to send email", error);
+                    alert("Falha ao enviar mensagem. Tente novamente!");
+                });
+        });
+    </script>
 </body>         
 
