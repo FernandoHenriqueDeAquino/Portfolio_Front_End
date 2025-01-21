@@ -197,6 +197,10 @@ a:focus {
     box-shadow: 3px 3px 7px #000;
 }
 
+#contact-form input[type="submit"]:hover{
+    background-color: #e19444;
+}
+
 .grid-container.one-column{
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
 }
