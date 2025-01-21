@@ -120,6 +120,13 @@ a:focus {
 
 /* SECTION SKILLS*/
 
-#portfolio img {
+/* SECTION PORTFOLIO*/
+
+#portfolio .grid-item img {
     max-height: 180px;
+}
+
+#portfolio .grid-item{
+    border: solid 2px #444;
+    margin: 3px;
 }
