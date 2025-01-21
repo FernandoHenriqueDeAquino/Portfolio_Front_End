@@ -68,8 +68,8 @@ a:focus {
 
 #nav-bar {
     padding: 1em 8em;
-    background-color: #fff;
-    box-shadow: 0 2px 2px #000;
+    background-color: #555;
+    box-shadow: 0 2px 12px #000;
     position: relative;
     top: 0;
 }
@@ -118,21 +118,22 @@ a:focus {
 #about {
     background-color: #444;
     color: #fff;
+    box-shadow: -3px 3px 26px 3px #000;
 }
 
 /* SECTION SKILLS*/
 
-#skills{
+#skills {
     background-color: #ac7234;
     color: #fff;
-    box-shadow: 3px 3px 15px #000;
+    box-shadow: -3px 3px 26px 3px #000;
 }
 
 /* SECTION PORTFOLIO*/
 
-#portfolio{
+#portfolio {
     background-color: #444;
-    box-shadow: 3px 3px 15px #000;
+    box-shadow: -3px 3px 26px 3px #000;
 }
 
 #portfolio .grid-container {
@@ -152,28 +153,62 @@ a:focus {
 
 /* SECTION CONTACT FORM */
 
-#contact{
+#contact {
     background-color: #e19444;
     color: #fff;
-    box-shadow: 3px 3px 20px #000;
+    box-shadow: -3px 3px 26px 3px #000;
 }
 
-#contact-form{
+#contact-form {
     background-color: #757575;
     border-left: solid 15px #444;
     padding: 2%;
-    box-shadow: 3px 3px 7px 2px #000;
+    box-shadow: -3px 3px 26px 3px #000;
+}
+
+#contact-form input[type="text"],#contact-form input[type="email"],#contact-form textarea{
+    padding: 1.2em;
+    margin: 2px;
+    display: inline-block;
+    height: 50px;
+    border: solid 3px #585555;
+    border-radius: 8px;
+    width: 100%;
+}
+
+#contact-form textarea{
+    height: 200px;
+}
+
+#contact-form input[type="submit"]{
+    background-color: #ac7234;
+    font-weight: bold;
+    font-size: larger;
+    color: #fff;
+    border-radius: 6px;
+    padding: 0.75%;
+    border: solid 3px #fff;
+    box-shadow: 3px 3px 7px #000;
+}
+
+.grid-container.one-column{
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+}
+
+#contact h1{
+    padding-bottom: 2px;
+    border-bottom: double 6px #444;
 }
 
 /* SECTION FOOTER */
 
-#footer{
+#footer {
     background-color: #444;
     text-align: center;
     padding: 18px;
     box-shadow: -3px 3px 26px 3px #000;
 }
 
-#footer a{
+#footer a {
     padding: 15px;
 }
