@@ -37,8 +37,9 @@ a:visited {
 
 a:hover,
 a:focus {
-    color: red;
+    color: #e19444;
     text-decoration: none;
+    border-bottom: solid 2px #cccccc;
 }
 
 /* CLASSES COMPARTILHADAS */
@@ -90,6 +91,8 @@ a:focus {
 #nav-bar ul li {
     margin-right: 0.5em;
     display: inline-block;
+    font-size: 1.25;
+    font-weight: 500;
 }
 
 /* SECTION PRESENTATION */
@@ -207,11 +210,21 @@ a:focus {
 
 #footer {
     background-color: #444;
+    font-weight: 500;
+    font-size: 1.25;
     text-align: center;
     padding: 18px;
     box-shadow: -3px 3px 26px 3px #000;
 }
 
-#footer a {
-    padding: 15px;
+#footer a{`
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#footer a:hover,
+#footer a:focus {
+    padding: 5px;
+    border: solid 2px #cccccc;
+    border-radius: 6px;
 }
