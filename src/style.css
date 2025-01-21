@@ -125,12 +125,14 @@ a:focus {
 #skills{
     background-color: #ac7234;
     color: #fff;
+    box-shadow: 3px 3px 15px #000;
 }
 
 /* SECTION PORTFOLIO*/
 
 #portfolio{
     background-color: #444;
+    box-shadow: 3px 3px 15px #000;
 }
 
 #portfolio .grid-container {
@@ -153,10 +155,25 @@ a:focus {
 #contact{
     background-color: #e19444;
     color: #fff;
+    box-shadow: 3px 3px 20px #000;
+}
+
+#contact-form{
+    background-color: #757575;
+    border-left: solid 15px #444;
+    padding: 2%;
+    box-shadow: 3px 3px 7px 2px #000;
 }
 
 /* SECTION FOOTER */
 
 #footer{
     background-color: #444;
+    text-align: center;
+    padding: 18px;
+    box-shadow: -3px 3px 26px 3px #000;
+}
+
+#footer a{
+    padding: 15px;
 }
