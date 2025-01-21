@@ -51,17 +51,19 @@ a:focus {
 
 /* FLEX GRID */
 
-.grid-container{
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 16px;
 }
 
-.grid-item{
+.grid-item {
     box-sizing: border-box;
     padding: 16px;
+    margin: 10px;
     text-align: center;
 }
+
 /* ELEMENTOS ESPECÍFICOS */
 
 #nav-bar {
@@ -113,20 +115,48 @@ a:focus {
 
 /* SECTION ABOUT */
 
-#about{
+#about {
     background-color: #444;
     color: #fff;
 }
 
 /* SECTION SKILLS*/
 
-/* SECTION PORTFOLIO*/
-
-#portfolio .grid-item img {
-    max-height: 180px;
+#skills{
+    background-color: #ac7234;
+    color: #fff;
 }
 
-#portfolio .grid-item{
-    border: solid 2px #444;
-    margin: 3px;
+/* SECTION PORTFOLIO*/
+
+#portfolio{
+    background-color: #444;
+}
+
+#portfolio .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 5px;
+}
+
+#portfolio .grid-item img {
+    aspect-ratio: 16/10;
+    max-height: 100%;
+    max-width: 100%;
+    text-align: center;
+    object-fit: cover;
+    box-shadow: 3px 3px 7px #000;
+}
+
+/* SECTION CONTACT FORM */
+
+#contact{
+    background-color: #e19444;
+    color: #fff;
+}
+
+/* SECTION FOOTER */
+
+#footer{
+    background-color: #444;
 }
