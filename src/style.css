@@ -252,12 +252,13 @@ a:focus {
     }
 }
 
-@media (max-width: 980px) {
+@media (max-width: 975px) {
     #nav-bar .nav-toggle {
         display: none;
+    }            
 }
 
-@media (max-width: 979px) { 
+@media (max-width: 974px) { 
     #nav-bar .nav-toggle {
         display: block;
     }
@@ -277,3 +278,4 @@ a:focus {
         background-color: #444;
         border: solid 1px #000;
     }
+}
