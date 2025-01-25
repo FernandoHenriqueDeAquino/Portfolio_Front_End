@@ -243,25 +243,19 @@ a:focus {
 
 /* RESPONSIVIDADE */
 
-@media(max-width: 500px) {
-    .container {
-        padding: 10% 3%;
-    }
-    #nav-bar {
-        padding: 10% 3%;
-    }
-}
-
-@media (max-width: 975px) {
+/* Hide nav-toggle when screen is wider than 975px */
+@media (min-width: 976px) {
     #nav-bar .nav-toggle {
         display: none;
-    }            
+    }
 }
 
-@media (max-width: 974px) { 
+/* Show nav-toggle when screen is 975px or narrower */
+@media (max-width: 975px) {
     #nav-bar .nav-toggle {
         display: block;
     }
+
     #nav-bar ul {
         position: absolute;
         top: 60px;
@@ -270,6 +264,7 @@ a:focus {
         width: 100%;
         list-style: none;
     }
+
     #nav-bar ul li {
         margin-right: 0.5em;
         display: inline-block;
