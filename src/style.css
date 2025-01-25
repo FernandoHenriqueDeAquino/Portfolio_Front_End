@@ -71,8 +71,16 @@ a:focus {
     padding: 1em 8em;
     background-color: #555;
     box-shadow: -3px 3px 26px 3px #000;
-    position: relative;
+    position: sticky;
     top: 0;
+}
+
+#nav-bar .nav-toggle {
+    float: right;
+    cursor: pointer;
+    font-size: 1.25em;
+    color: #fff;
+    display: inline-block;
 }
 
 #nav-bar #brand {
@@ -232,3 +240,40 @@ a:focus {
     border: solid 2px #cccccc;
     border-radius: 6px;
 }
+
+/* RESPONSIVIDADE */
+
+@media(max-width: 500px) {
+    .container {
+        padding: 10% 3%;
+    }
+    #nav-bar {
+        padding: 10% 3%;
+    }
+}
+
+@media (max-width: 980px) {
+    #nav-bar .nav-toggle {
+        display: none;
+}
+
+@media (max-width: 979px) { 
+    #nav-bar .nav-toggle {
+        display: block;
+    }
+    #nav-bar ul {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 0;
+        width: 100%;
+        list-style: none;
+    }
+    #nav-bar ul li {
+        margin-right: 0.5em;
+        display: inline-block;
+        width: 100%;
+        padding: 1em 8em;
+        background-color: #444;
+        border: solid 1px #000;
+    }
