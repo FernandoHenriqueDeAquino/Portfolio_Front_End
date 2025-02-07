@@ -179,7 +179,9 @@ a:focus {
     box-shadow: -3px 3px 26px 3px #000;
 }
 
-#contact-form input[type="text"],#contact-form input[type="email"],#contact-form textarea{
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
     padding: 1.2em;
     margin: 2px;
     display: inline-block;
@@ -189,11 +191,11 @@ a:focus {
     width: 100%;
 }
 
-#contact-form textarea{
+#contact-form textarea {
     height: 200px;
 }
 
-#contact-form input[type="submit"]{
+#contact-form input[type="submit"] {
     background-color: #ac7234;
     font-weight: bold;
     font-size: larger;
@@ -205,15 +207,15 @@ a:focus {
     box-shadow: 3px 3px 7px #000;
 }
 
-#contact-form input[type="submit"]:hover{
+#contact-form input[type="submit"]:hover {
     background-color: #e19444;
 }
 
-.grid-container.one-column{
+.grid-container.one-column {
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
 }
 
-#contact h1{
+#contact h1 {
     padding-bottom: 2px;
     border-bottom: double 6px #444;
 }
@@ -229,7 +231,7 @@ a:focus {
     box-shadow: -3px 3px 26px 3px #000;
 }
 
-#footer a{`
+#footer a {
     margin-left: 15px;
     margin-right: 15px;
 }
