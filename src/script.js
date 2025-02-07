@@ -33,6 +33,12 @@ $(document).ready(() => {
 
         console.log(formData); // Log form data to the console
 
+  
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    console.log("Form submitted!");
+  })
+
+
         /*
         $ajax({
             type: "POST",
