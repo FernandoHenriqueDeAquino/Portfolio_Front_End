@@ -97,18 +97,18 @@
         <h1>Contato</h1>
         <div class="grid-container">
           <div class="grid-item">
-            <input type="text" placeholder="Nome" id="name" autocomplete="name" />
+            <input type="text" name="name" placeholder="Nome" id="name" autocomplete="name" required />
           </div>
           <div class="grid-item">
-            <input type="email" placeholder="E-mail" id="email" autocomplete="email" />
+            <input type="email" name="email" placeholder="E-mail" id="email" autocomplete="email" required />
           </div>
         </div>
         <div class="grid-container one-column">
           <div class="grid-item">
-            <input type="text" placeholder="Assunto" id="subject"/>
+            <input type="text" name="subject" placeholder="Assunto" id="subject" required />
           </div>
           <div class="grid-item">
-            <textarea placeholder="Mensagem" id="message"></textarea>
+            <textarea name="message" placeholder="Mensagem" id="message" required></textarea>
           </div>
           <div class="grid-item">
             <input type="submit" value="Enviar" />
@@ -116,6 +116,7 @@
         </div>
       </form>
     </section>
+    
   </main>
   <footer id="footer">
     <a href="https://www.linkedin.com/in/fernandohenriquedeaquino/" target="_blank">Linkedin</a>
