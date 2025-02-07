@@ -3,56 +3,37 @@ $(document).ready(() => {
         $("#nav-bar ul").slideToggle("medium");
     });
 
-    // Corrected the selector to target an ID
     $("#contact-form").on("submit", function (event) {
-        event.preventDefault(); // Prevent the form from reloading the page
+        event.preventDefault(); // Stop the form from submitting by default
 
-        // Validate each field properly using IDs with #
+        let isValid = true;
+
+        // Validate each field
         if (!$("#name").val()) {
             alert("Preencha o campo nome");
+            isValid = false;
         }
 
         if (!$("#email").val()) {
             alert("Preencha o campo email");
+            isValid = false;
         }
 
         if (!$("#subject").val()) {
             alert("Preencha o campo assunto");
+            isValid = false;
         }
 
         if (!$("#message").val()) {
             alert("Preencha o campo mensagem");
+            isValid = false;
         }
 
-        const formData = {
-            name: $("#name").val(),
-            email: $("#email").val(),
-            subject: $("#subject").val(),
-            message: $("#message").val()
-        };
+        if (!isValid) {
+            return; // Stop execution if validation fails
+        }
 
-        console.log(formData); // Log form data to the console
-
-  
-  document.getElementById("contact-form").addEventListener("submit", function(event) {
-    console.log("Form submitted!");
-  })
-
-
-        /*
-        $ajax({
-            type: "POST",
-            url: "contact.php",
-            data: formData,
-            success: function (response) {
-                // Handle success response
-                console.log("Form submitted successfully.");
-            },
-            error: function (xhr, status, error) {
-                // Handle error response
-                console.error("Error submitting form: " + error);
-            }
-        })
-        */
+        // If validation passes, let the form submit normally
+        this.submit();
     });
 });
